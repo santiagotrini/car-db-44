@@ -1,8 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const port = 3000;
-const db   = 'mongodb://localhost/autos';
+const port = process.env.PORT || 3000;
+const db   = process.env.DB   || 'mongodb://localhost/autos';
 
 const app = express();
 
